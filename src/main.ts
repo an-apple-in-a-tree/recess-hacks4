@@ -2,7 +2,6 @@ import "./style.css";
 import Banner from "/banner.png";
 import Wave from "/wave.png";
 import Logo from "/logo.jpg";
-import { setupCounter } from "./counter.ts";
 import AOS from "aos";
 
 
@@ -46,7 +45,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <img src = "${Wave}" alt="Wave" class="w-screen my-0">
         <div class="container pt-20 mx-auto text-center">
             <h2 class="text-3xl font-bold mb-12 montserrat">About Recess Hacks</h2>
-            <p class="mb-6 text-lg noto-sans mx-8">Recess Hacks is an exciting hackathon that empowers high school students to experience the thrill of 
+            <p class="mb-6 text-lg nunito-sans mx-8">Recess Hacks is an exciting hackathon that empowers high school students to experience the thrill of 
             hacking and building projects with cutting-edge tech tools. 
             Based in Canada, we welcome participants from around the globe. 
             Stay tuned, as this year’s theme will be revealed soon, promising an engaging and innovative challenge for all attendees. Join us to collaborate, learn, and create!</p>
@@ -55,7 +54,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </section>
 
     <!-- Schedule Section -->
-    <section id="schedule" class="bg-gray-50 py-20">
+    <section id="schedule" class="bg-aqua py-20 text-white">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Event Schedule</h2>
             <p>Coming Soon! Stay tuned.</p>
@@ -63,7 +62,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </section>
 
     <!-- Prizes Section -->
-    <section id="prizes" class="py-20">
+    <section id="prizes" class="bg-crimson py-20 text-white">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Prizes and Rewards</h2>
             <p>Coming Soon! Stay tuned.</p>
@@ -71,19 +70,19 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </section>
 
     <!-- Sponsors Section -->
-    <section id="sponsors" class="bg-gray-50 py-20">
+    <section id="sponsors" class="bg-sunshine py-20">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Our Sponsors</h2>
-            <p class="mb-6">Thank you to all our sponsors:</p>
+            <p class="mb-6">Thank you to all our sponsors below:</p>
             <div class="flex justify-center space-x-6 mb-6">
-                <p>None yet ;-;. Please support us by sponsoring.</p>
+                <p>No sponsors yet ;-; Please support us if you can</p>
             </div>
             <a href="mailto:sponsor@recesshacks@gmail.com"" class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition">Become a Sponsor</a>
         </div>
     </section>
 
     <!-- Registration Section -->
-    <section id="register" class="py-20">
+    <section id="register" class="py-20 bg-crimson text-white">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Register for Recess Hacks 4.0</h2>
             <p class="mb-6">Please join the discord server, register on devpost and fill out the participant forms posted on our linktree: </p>
@@ -121,4 +120,3 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
 AOS.init();
 
-setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
