@@ -6,7 +6,7 @@ import { setupCounter } from "./counter.ts";
 import AOS from "aos";
 
 
-document.addEventListener("DOMContentLoaded", (e) => {
+document.addEventListener("DOMContentLoaded", () => {
   AOS.init();
 });
 
