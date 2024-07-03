@@ -103,7 +103,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <section id="contact" class="bg-gray-50 py-20">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
-            <p>Email: <a href="mailto:contact@recesshacks@gmail.com" class="text-indigo-600 hover:underline">contact@recesshacks@gmail.com</a></p>
+            <p>Email: <a href="mailto:contact@recesshack.com" class="text-indigo-600 hover:underline">contact@recesshacks@gmail.com</a></p>
             <div class="flex justify-center space-x-12 mt-8">
                 <a href="https://www.instagram.com/recesshacks"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" class="h-8"></a>
                 <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="Twitter" class="h-8 bg-black"></a>
