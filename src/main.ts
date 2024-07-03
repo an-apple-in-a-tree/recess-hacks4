@@ -76,6 +76,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
             <p class="mb-6">Thank you to all our sponsors below:</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 py-8">
             <img src="/sponsors/aops.png" alt="Sponsor 1" class="mx-auto rounded-lg shadow-md">
+           <img src="/sponsors/wolfram.png" alt="Sponsor 1" class="mx-auto rounded-lg shadow-md"> 
             </div>
             <div class="flex justify-center space-x-6 mb-6">
                 <p>Interested in sponsoring Recess Hacks?</p>
