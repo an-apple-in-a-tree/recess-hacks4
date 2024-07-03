@@ -74,8 +74,11 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Our Sponsors</h2>
             <p class="mb-6">Thank you to all our sponsors below:</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 py-8">
+            <img src="/sponsors/aops.png" alt="Sponsor 1" class="mx-auto rounded-lg shadow-md">
+            </div>
             <div class="flex justify-center space-x-6 mb-6">
-                <p>No sponsors yet ;-; Please support us if you can</p>
+                <p>Interested in sponsoring Recess Hacks?</p>
             </div>
             <a href="mailto:sponsor@recesshacks@gmail.com"" class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition">Become a Sponsor</a>
         </div>
