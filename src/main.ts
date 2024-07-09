@@ -96,7 +96,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
             <p class="mb-6">Please join the discord server, register on devpost and fill out the participant forms! </p>
             <form action="https://recesshacks4.devpost.com/" method="post" class="max-w-lg mx-auto">
                 <!-- Registration form fields -->
-                <button type="submit" class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition w-full">Register Now</button>
+                <button type="submit" class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition w-full" onclick="window.location.href='https://recesshacks4.devpost.com/'">Register Now</button>
             </form>
         </div>
     </section>
