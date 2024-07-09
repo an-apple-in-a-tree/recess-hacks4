@@ -65,7 +65,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <section id="prizes" class="bg-crimson py-20 text-white">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Prizes and Rewards</h2>
-            <p>Coming Soon! Stay tuned.</p>
+            <p>Our current prize pool is $500000 CAD! Stay tuned for updates as we post more prizes.</p>
         </div>
     </section>
 
@@ -93,8 +93,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <section id="register" class="py-20 bg-crimson text-white">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Register for Recess Hacks 4.0</h2>
-            <p class="mb-6">Please join the discord server, register on devpost and fill out the participant forms posted on our linktree: </p>
-            <form action="https://linktr.ee/recesshacks" method="post" class="max-w-lg mx-auto">
+            <p class="mb-6">Please join the discord server, register on devpost and fill out the participant forms! </p>
+            <form action="https://recesshacks4.devpost.com/" method="post" class="max-w-lg mx-auto">
                 <!-- Registration form fields -->
                 <button type="submit" class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition w-full">Register Now</button>
             </form>
@@ -109,7 +109,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
             <div class="flex justify-center space-x-12 mt-8">
                 <a href="https://www.instagram.com/recesshacks"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" class="h-8"></a>
                 <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="Twitter" class="h-8 bg-black"></a>
-                <a href=""><img src="https://seeklogo.com/images/D/devpost-logo-95FF685C5D-seeklogo.com.png" alt="Devpost" class="h-8"></a>
+                <a href="https://recesshacks4.devpost.com/"><img src="https://seeklogo.com/images/D/devpost-logo-95FF685C5D-seeklogo.com.png" alt="Devpost" class="h-8"></a>
                 <a href="https://discord.com/invite/RrCY76mefj"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord" class="h-8"></a>
                 <a href="https://linktr.ee/recesshacks"><img src="https://cdn.icon-icons.com/icons2/3912/PNG/512/linktree_logo_icon_247832.png" alt="Linktree" class="h-8"></a>
                 <!-- Add more social media as needed -->
