@@ -38,3 +38,21 @@
 .roboto {
     font-family: 'Roboto';
 }
+
+/* Animations */
+.ani-hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+/* Just in case user doesn't like animations */
+@media(prefers-reduced-motion){
+    .ani-hidden{
+        transition: none;
+    }
+}
+.ani-show{
+    opacity: 1;
+    filter: blur(0px);
+}
