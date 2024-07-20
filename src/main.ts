@@ -130,7 +130,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 //Method that checks if an html element is being displayed on the screen and if they are, change their class from hidden to show
 const observer  = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
-        console.log(entry);
         if (entry.isIntersecting){
             entry.target.classList.add('ani-show');
         } else{
