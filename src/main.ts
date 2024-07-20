@@ -80,7 +80,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
            <img src="/sponsors/ttmath.jpg" alt="TT Math" class="mx-auto rounded-lg shadow-md">
            <img src="/sponsors/axure.png" alt="Axure" class="mx-auto rounded-lg shadow-md">
            <img src="/sponsors/xyz.png" alt=".xyz" class="mx-auto rounded-lg shadow-md"> 
-           <img src="/sponsors/gmc.png" alt="gmc" class="mx-auto rounded-lg shadow-md">   
+           <img src="/sponsors/gmc.png" alt="gmc" class="mx-auto rounded-lg shadow-md">
+           <img src="/sponsors/onepass.png" alt="One Password" class="mx-auto rounded-lg shadow-md">   
+           <img src="/sponsors/icake.png" alt="Interview cake" class="mx-auto rounded-lg shadow-md">
             </div>
             <div class="flex justify-center space-x-6 mb-6">
                 <p>Interested in sponsoring Recess Hacks?</p>
