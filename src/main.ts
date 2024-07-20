@@ -132,9 +132,7 @@ const observer  = new IntersectionObserver((entries)=>{
     entries.forEach((entry)=>{
         if (entry.isIntersecting){
             entry.target.classList.add('ani-show');
-        } else{
-            entry.target.classList.remove('ani-show');
-        }
+        } 
     })
 })
 
