@@ -2,6 +2,7 @@ import "./style.css";
 import Banner from "/banner.png";
 import Wave from "/wave.png";
 import Logo from "/logo.jpg";
+import Calendar from '/calendar.png';
 import AOS from "aos";
 
 
@@ -57,7 +58,31 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <section id="schedule" class="bg-aqua py-20 text-white ani-hidden">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Event Schedule</h2>
-            <p>Coming Soon! Stay tuned.</p>
+            <div class="secondary-container">
+                <div class="event-list">
+                    <div class="event-container">
+                        <div class="event-title text-xl font-bold">
+                            Opening Ceremony
+                            <div class="event-duration font-normal text-base">5-6 pm EST</div>
+                        </div>
+                        <div class="event-date">
+                            <div class="event-month font-bold">Aug</div>
+                            <div class="event-day font-bold">30</div>
+                        </div>
+                    </div>
+                    <div class="event-container">
+                        <div class="event-title text-xl font-bold">
+                            Closing Ceremony
+                            <div class="event-duration font-normal text-base">6-7 pm EST</div>
+                        </div>
+                        <div class="event-date">
+                            <div class="event-month font-bold">Sep</div>
+                            <div class="event-day font-bold">1</div>
+                        </div>
+                    </div>
+                </div>
+                <img src = "${Calendar}" alt="Calendar" class="w-[600px] my-0">
+            </div>
         </div>
     </section>
 
