@@ -2,6 +2,7 @@ import "./style.css";
 import Banner from "/banner.png";
 import Wave from "/wave.png";
 import Logo from "/logo.jpg";
+import Calendar from '/calendar.png';
 import AOS from "aos";
 
 
@@ -11,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
-      <header class = "bg-aqua">
+      <header class = "bg-aqua ani-hidden">
        <img src="${Banner}" alt="Logo" class="w-screen">
        <div class = "bg-crimson">
        <div class="container mx-auto flex justify-center items-center pt-8 px-6 w-full">
@@ -31,7 +32,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="bg-aqua text-white py-12">
+    <section id="hero" class="bg-aqua text-white py-12 ani-hidden">
     <div class="container mx-auto text-center pt-20 pb-6">
             <h1 class="text-6xl font-bold mb-4">Empowering the Next Generation of Innovators</h1>
             <p class="text-xl mb-4">Join us for Recess Hacks 4.0 - An Online Hackathon for Innovative Highschoolers!</p>
@@ -41,7 +42,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </section>
 
     <!-- About Section -->
-    <section id="about" class="pb-20 bg-sunshine">
+    <section id="about" class="pb-20 bg-sunshine ani-hidden">
         <img src = "${Wave}" alt="Wave" class="w-screen my-0">
         <div class="container pt-20 mx-auto text-center">
             <h2 class="text-3xl font-bold mb-12 montserrat">About Recess Hacks</h2>
@@ -54,15 +55,39 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </section>
 
     <!-- Schedule Section -->
-    <section id="schedule" class="bg-aqua py-20 text-white">
-        <div class="container mx-auto text-center">
+    <section id="schedule" class="bg-aqua py-20 text-white ani-hidden">
+        <div class="flex justify-center flex-col w-full text-center p-8">
             <h2 class="text-3xl font-bold mb-6">Event Schedule</h2>
-            <p>Coming Soon! Stay tuned.</p>
+            <div class="secondary-container">
+                <div class="event-list">
+                    <div class="event-container">
+                        <div class="event-title text-xl font-bold">
+                            Opening Ceremony
+                            <div class="event-duration font-normal text-base">5-6 pm EST</div>
+                        </div>
+                        <div class="event-date">
+                            <div class="event-month font-bold">Aug</div>
+                            <div class="event-day font-bold">30</div>
+                        </div>
+                    </div>
+                    <div class="event-container">
+                        <div class="event-title text-xl font-bold">
+                            Closing Ceremony
+                            <div class="event-duration font-normal text-base">6-7 pm EST</div>
+                        </div>
+                        <div class="event-date">
+                            <div class="event-month font-bold">Sep</div>
+                            <div class="event-day font-bold">1</div>
+                        </div>
+                    </div>
+                </div>
+                <img src = "${Calendar}" alt="Calendar" class="calendar">
+            </div>
         </div>
     </section>
 
     <!-- Prizes Section -->
-    <section id="prizes" class="bg-crimson py-20 text-white">
+    <section id="prizes" class="bg-crimson py-20 text-white ani-hidden">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Prizes and Rewards</h2>
             <p>Our current prize pool is $500000 CAD! Stay tuned for updates as we post more prizes.</p>
@@ -70,17 +95,19 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </section>
 
     <!-- Sponsors Section -->
-    <section id="sponsors" class="bg-sunshine py-20">
+    <section id="sponsors" class="bg-sunshine py-20 ani-hidden">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Our Sponsors</h2>
             <p class="mb-6">Thank you to all our sponsors below:</p>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 py-8">
-            <img src="/sponsors/aops.png" alt="AOPS" class="mx-auto rounded-lg shadow-md">
-           <img src="/sponsors/wolfram.png" alt="Wolfram Alpha" class="mx-auto rounded-lg shadow-md"> 
-           <img src="/sponsors/ttmath.jpg" alt="TT Math" class="mx-auto rounded-lg shadow-md">
-           <img src="/sponsors/axure.png" alt="Axure" class="mx-auto rounded-lg shadow-md">
-           <img src="/sponsors/xyz.png" alt=".xyz" class="mx-auto rounded-lg shadow-md"> 
-           <img src="/sponsors/gmc.png" alt="gmc" class="mx-auto rounded-lg shadow-md">   
+            <a href='https://artofproblemsolving.com' target="_blank"><img src="/sponsors/aops.png" alt="AOPS" class="mx-auto rounded-lg shadow-md"></a>
+           <a href='https://www.wolfram.com' target="_blank"><img src="/sponsors/wolfram.png" alt="Wolfram Alpha" class="mx-auto rounded-lg shadow-md"></a> 
+           <a href='http://www.ttmath.ca/en/' target='_blank'><img src="/sponsors/ttmath.jpg" alt="TT Math" class="mx-auto rounded-lg shadow-md"></a>
+           <a href='https://www.axure.com' target='_blank'><img src="/sponsors/axure.png" alt="Axure" class="mx-auto rounded-lg shadow-md"></a>
+           <a href='https://gen.xyz' target='_blank'><img src="/sponsors/xyz.png" alt=".xyz" class="mx-auto rounded-lg shadow-md"></a> 
+           <a href='https://givemycertificate.com' target='_blank'><img src="/sponsors/gmc.png" alt="gmc" class="mx-auto rounded-lg shadow-md"></a>
+           <a href='https://1password.com' target='_blank'><img src="/sponsors/onepass.png" alt="One Password" class="mx-auto rounded-lg shadow-md"></a>   
+           <a href='https://www.interviewcake.com' target='_blank'><img src="/sponsors/icake.png" alt="Interview cake" class="mx-auto rounded-lg shadow-md"></a>
             </div>
             <div class="flex justify-center space-x-6 mb-6">
                 <p>Interested in sponsoring Recess Hacks?</p>
@@ -90,7 +117,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </section>
 
     <!-- Registration Section -->
-    <section id="register" class="py-20 bg-crimson text-white">
+    <section id="register" class="py-20 bg-crimson text-white ani-hidden">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Register for Recess Hacks 4.0</h2>
             <p class="mb-6">Please join the discord server, register on devpost and fill out the participant forms! </p>
@@ -102,13 +129,12 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-50 py-20">
+    <section id="contact" class="bg-gray-50 py-20 ani-hidden">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
             <p>Email: <a href="mailto:contact@recesshack.com" class="text-indigo-600 hover:underline">contact@recesshacks.com</a></p>
             <div class="flex justify-center space-x-12 mt-8">
                 <a href="https://www.instagram.com/recesshacks"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" class="h-8"></a>
-                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="Twitter" class="h-8 bg-black"></a>
                 <a href="https://recesshacks4.devpost.com/"><img src="https://seeklogo.com/images/D/devpost-logo-95FF685C5D-seeklogo.com.png" alt="Devpost" class="h-8"></a>
                 <a href="https://discord.com/invite/RrCY76mefj"><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="Discord" class="h-8"></a>
                 <a href="https://linktr.ee/recesshacks"><img src="https://cdn.icon-icons.com/icons2/3912/PNG/512/linktree_logo_icon_247832.png" alt="Linktree" class="h-8"></a>
@@ -118,13 +144,27 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-white py-6">
+    <footer class="bg-white py-6 ani-hidden">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 Recess Hacks. All rights reserved.</p>
         </div>
     </footer>
   </div>
 `;
+
+//Method that checks if an html element is being displayed on the screen and if they are, change their class from hidden to show
+const observer  = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if (entry.isIntersecting){
+            entry.target.classList.add('ani-show');
+        } 
+    })
+})
+
+//Find all elements with hidden class
+const hiddenElements = document.querySelectorAll('.ani-hidden');
+//Loop through all such elements and check if animation needs to be played
+hiddenElements.forEach((el)=>observer.observe(el));
 
 AOS.init();
 
