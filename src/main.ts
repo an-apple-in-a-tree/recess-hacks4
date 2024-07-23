@@ -56,7 +56,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
     <!-- Schedule Section -->
     <section id="schedule" class="bg-aqua py-20 text-white ani-hidden">
-        <div class="container mx-auto text-center">
+        <div class="flex justify-center flex-col w-full text-center p-8">
             <h2 class="text-3xl font-bold mb-6">Event Schedule</h2>
             <div class="secondary-container">
                 <div class="event-list">
@@ -81,7 +81,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
                         </div>
                     </div>
                 </div>
-                <img src = "${Calendar}" alt="Calendar" class="calendar my-0">
+                <img src = "${Calendar}" alt="Calendar" class="calendar">
             </div>
         </div>
     </section>

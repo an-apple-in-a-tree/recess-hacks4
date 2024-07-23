@@ -60,11 +60,12 @@
 
 .event-list{
     margin: auto;
-    max-width: 400px;
-    border: 3px solid #E43947;
+    max-width: 600px;
+    border: 3px solid white;
     border-radius: 25px;
     padding: 8px 0px;
     display: flex;
+    justify-content: start;
     flex-direction: column;
     flex-grow: 1;
 }
@@ -73,16 +74,15 @@
     margin: 4px 0px;
     display: flex;
     width: 100%;
-    padding-bottom: 8px;
+    padding: 24px 8px;
 }
 
 .event-list .event-container{
-    border-bottom: 2px solid #FFD33B;
+    border-bottom: 2px solid white;
 }
 
 .event-list .event-container:last-child{
     border: 0;
-    padding-bottom: 0px;
 }
 
 .event-title{
@@ -104,9 +104,14 @@
 .secondary-container{
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .calendar{
     max-width: 600px;
     min-width: 200px;
+
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
