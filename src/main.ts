@@ -81,7 +81,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
                         </div>
                     </div>
                 </div>
-                <img src = "${Calendar}" alt="Calendar" class="w-[600px] my-0">
+                <img src = "${Calendar}" alt="Calendar" class="calendar my-0">
             </div>
         </div>
     </section>

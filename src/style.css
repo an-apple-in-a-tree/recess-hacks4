@@ -105,3 +105,8 @@
     display: flex;
     align-items: center;
 }
+
+.calendar{
+    max-width: 600px;
+    min-width: 200px;
+}
