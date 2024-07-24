@@ -36,7 +36,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
             <h1 class="text-6xl font-bold mb-4">Empowering the Next Generation of Innovators</h1>
             <p class="text-xl mb-4">Join us for Recess Hacks 4.0 - An Online Hackathon for Innovative Highschoolers!</p>
             <p class="text-lg mb-8 montserrat">August 30th, 2024 - September 1st, 2024</p>
-            <a href="#register" class="bg-tealish text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-200 transition">Register Now</a>
+            <a href="https://recesshacks4.devpost.com/" class="bg-tealish text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-200 transition">Sign Up Now!</a>
         </div>
     </section>
 
@@ -93,11 +93,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <section id="register" class="py-20 bg-crimson text-white">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Register for Recess Hacks 4.0</h2>
-            <p class="mb-6">Please join the discord server, register on devpost and fill out the participant forms! </p>
-            <form action="https://recesshacks4.devpost.com/" method="post" class="max-w-lg mx-auto">
-                <!-- Registration form fields -->
-                <button type="submit" class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition w-full" onclick="window.location.href='https://recesshacks4.devpost.com/'>Register Now</button>
-            </form>
+            <p class="mb-12">Please join the discord server, register on devpost and fill out the participant forms! </p>
+            <a href="https://recesshacks4.devpost.com/" class=" bg-sunshine text-crimson font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-200 transition">Register for Recess Hacks</a>
         </div>
     </section>
 
@@ -105,7 +102,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <section id="contact" class="bg-gray-50 py-20">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
-            <p>Email: <a href="mailto:contact@recesshack.com" class="text-indigo-600 hover:underline">contact@recesshacks.com</a></p>
+            <p>Email: <a href="mailto:contact@recesshack.com" class="text-indigo-500 hover:underline">contact@recesshacks.com</a></p>
             <div class="flex justify-center space-x-12 mt-8">
                 <a href="https://www.instagram.com/recesshacks"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" class="h-8"></a>
                 <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="Twitter" class="h-8 bg-black"></a>
@@ -118,7 +115,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </section>
 
     <!-- Footer Section -->
-    <footer class="bg-white py-6">
+    <footer class="bg-crimson text-white py-6">
         <div class="container mx-auto text-center">
             <p>&copy; 2024 Recess Hacks. All rights reserved.</p>
         </div>
