@@ -25,7 +25,8 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    margin-right: 12px;
+    margin-right: 12px;npm install gh-pages --save-dev
+
 }
 
 .event-container{
